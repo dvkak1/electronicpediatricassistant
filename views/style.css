@@ -1,0 +1,2762 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  padding: 0px;
+  margin: 0;
+  background: #e6e6e6;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-family: Goldman;
+ color: #444;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+header * {
+  color: white;
+  text-decoration: none;
+}
+
+
+header {
+  background: #80bfff;
+  height: 66px;
+}
+
+header .logo {
+  float: left;
+  /* border: 1px solid red; */
+  height: inherit;
+  margin-left: 2em;
+  margin-top: 3px;
+}
+
+header .logo-text {
+  margin: 9px;
+  font-family: Goldman;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+header .logo-text span {
+  color: #0066CC;
+  text-shadow: none;
+}
+
+header ul {
+  float: right;
+  /* border: 1px solid red; */
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  height: inherit;
+}
+
+header ul li {
+  float: left;
+  top: 66px;
+  right: 0px;
+  /* width: 180px; */
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul {
+  display: none;
+  position: absolute;
+  top: 66px;
+  /* right: 150px; */
+  width: 180px;
+  z-index: 3;
+}
+
+header ul li ul li {
+  /* padding: 10px; */
+  background: #80bfff;
+  width: 100%;
+}
+
+
+
+header ul li ul li a:hover {
+  background: #F0F8FF;
+  transition: 0.5s;
+}
+
+header ul li a {
+  display: block;
+  padding: 21px;
+  font-size: 1.1em;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+header ul li a:hover {
+  background: #F0F8FF;
+  transition: 0.5s;
+}
+
+header .menu-toggle {
+  display: none;
+}
+
+.page-wrapper {
+  min-height: 100%;
+}
+
+.form-wrapper {
+  /* margin: 0 50px; */
+  top: -100px;
+  width: 100%;
+  /* background-color: blue; */
+  position: relative;
+}
+
+.form-wrapper #drassist-form {
+  float: left;
+  width: 380px;
+}
+
+.form-wrapper #doctor-form {
+    float: left;
+    width: 380px;
+    margin-left: -20px;
+}
+
+.form-wrapper #profImageDisplay {
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+}
+
+
+.search-container{
+  float: right;
+  margin-top:-1500px;
+  background-color: white;
+  margin-right: 200px;
+  width: 405px;
+}
+
+.search-container .form-title {
+    text-align: center;
+}
+
+.search-container .form-title h2 {
+    color: #80bfff;
+}
+
+.search-container .btn {
+  padding: .5rem 1rem;
+  background: #80bfff;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  text-decoration: none;
+  font-family: Goldman;
+  margin-bottom: 5px;
+}
+
+.welcome-assistant h1 {
+  height: 90px;
+  width: 650px;
+  /* border: 1px red solid; */
+  padding-top: 25px;
+  position: relative;
+}
+
+.welcome-doctor h1 {
+  height: 90px;
+  width: 650px;
+  padding-top: 25px;
+  position: relative;
+}
+
+
+
+.dateforassistant p {
+  height: 20px;
+  width: 150px;
+  margin-top: -45px;
+}
+
+.datefordoctor p {
+  height: 20px;
+  width: 150px;
+  margin-top: -45px;
+}
+
+
+/*POST SLIDER*/
+
+.post-slider {
+  position: relative;
+}
+
+.post-slider .slider-title {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.post-slider .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2em;
+  color: #006669;
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2em;
+  color: #006669;
+  cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+  width: 85%;
+  height: 350px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.post-slider .profile-picture {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.post-slider .profile-picture #publicprofpic {
+  display: block;
+  border-radius: 50%;
+}
+
+.post-slider #publicdoctorprofile {
+  /* background-color: blue; */
+  margin-top: 100px;
+}
+/*
+.post-slider  #publicdoctorprofile .profile-picture {
+  background-color: blue;
+} */
+
+/* .post-slider .post-wrapper .profile-picture {
+  width: 150px;
+  height: 100px;
+  background-color: blue;
+  margin-bottom: 50px;
+} */
+
+.post-slider .post-wrapper .post {
+    width: 220px;
+    height: 350px !important;
+    /* height: 100%; */
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+}
+
+
+.post-slider .post-wrapper  #doctorportal {
+  background: #e6f2ff;
+  border-radius: 10px;
+}
+
+
+.post-slider .post-wrapper #aboutUsContent {
+  border-radius: 10px;
+  height: 50px;
+  background-color:  #e6e6ff;
+}
+
+.page-wrapper .post-slider .post-wrapper .post .slider-image {
+   width: 100%;
+   height: 200px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   background-color: light-gray;
+}
+
+/*content*/
+.content {
+  width: 90%;
+  margin: 150px auto 30px;
+}
+
+.content .main-content {
+  width: 70%;
+  float: left;
+}
+
+.content .main-content .post {
+  width: 95%;
+  height: 200px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+}
+
+.content .main-content .post span {
+  color: #0066CC;
+  text-shadow: none;
+  /* margin: 60px auto; */
+}
+
+.content .main-content .post #reminder h1 {
+  padding-top: 100px;
+}
+
+
+
+.content .main-content .post .read-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: transparent;
+  border-radius: 8px;
+  color: #80bfff;
+  border: 1px solid #80bfff;
+  /* background: #80bfff !important; */
+}
+
+.content .main-content .post .read-more:hover {
+  background: #80bfff;
+  color: white !important;
+  transition: .25s;
+}
+
+
+.content .main-content .post .post-image {
+  width: 30%;
+  height: 100%;
+  float: left;
+  padding-right: 10px;
+}
+
+.content .main-content .post .post-preview span {
+  font-family: Goldman;
+  color:  #66a3ff;
+  text-shadow: 1px 1px 1px #000000;
+  padding-right: 5px;
+}
+
+.content .main-content .post  #clinic-info p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.content .main-content #instruction .post-image {
+  /* width: 40%; */
+  width: 30%;
+  height: 50%;
+  float: left;
+  padding-right: 10px;
+  margin-top: 25px;
+  position: relative;
+  font-size: 15px;
+}
+
+.content .main-content #instruction .how-it-works {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+
+
+.content .main-content .recent-post-title {
+  margin: 20px;
+}
+
+.content .main-content .post span {
+  color: #0066CC;
+  text-shadow: none;
+  /* margin: 60px auto; */
+}
+
+
+.content .sidebar {
+  width: 30%;
+  float: left;
+}
+
+.content .sidebar .section {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.content .sidebar .section.search {
+  margin-top: 80px;
+}
+
+.content .sidebar #specialization {
+  margin-top: 20px;
+}
+
+/*Private Doctor Portal main content*/
+.content .reminder-wrapper {
+  width: 70%;
+  float: left;
+}
+
+.content .reminder-wrapper .title-reminder  {
+  width: 95%;
+  height: 200px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+  text-align: center;
+}
+
+.reminder-wrapper .title-wrapper h1{
+   margin-bottom:-50px;
+}
+
+.content .reminder-wrapper .title-reminder span {
+  color: #0066CC;
+  text-shadow: none;
+}
+
+.content .reminder-wrapper .list-of-reminders {
+  width: 95%;
+  height: 225px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+  justify-content: flex;
+}
+
+.content .reminder-wrapper .list-of-reminders h4 {
+  margin-top:5px;
+}
+
+.btn {
+  padding: .5rem 1rem;
+  background: #80bfff;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  text-decoration: none;
+  font-family: Goldman;
+}
+
+.btn:hover {
+  color: white !important;
+  background:#0066CC;
+}
+
+.text-input {
+  padding: .7rem 1rem;
+  display: block;
+  width: 95%;
+  border-radius: 5px;
+  outline: none;
+  color: #444;
+  line-height: 1.5rem;
+}
+
+.content .sidebar .section.search {
+  margin-top: 80px;
+}
+
+.content .sidebar .section.topics ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+.content .sidebar .section.topics ul li a {
+  display: block;
+  padding: 15px 0px 15px 0px;
+  border-bottom: 1px solid #e0e0e0;
+  text-decoration: none;
+}
+
+.content .sidebar .section.topics ul li a:hover {
+  padding-left: 20px;
+  transition: all 0.3s;
+}
+
+
+#notifLab {
+  height: 18px;
+  width: 18px;
+  background-color: #ff0000;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+  bottom:-15px;
+  left: 100px;
+}
+
+
+/*Messaging stylesheet*/
+.message-wrapper {
+margin-top: 150px;
+position: relative;
+}
+
+
+.user-container {
+  height: 520px;
+  width: 340px;
+  min-width: 300px;
+  background: #fff;
+  position: relative;
+  top: 10px;
+  left: 50px;
+}
+
+.list-header {
+  width: 100%;
+  height: 50px;
+  background-color: #F0F8FF;
+}
+
+.users-list {
+  width: 100%;
+  height: 200px;
+  margin: 10px 0 10px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+.users-list .users {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+}
+
+
+.list-header h4 {
+  padding: 10px 0 10px 0;
+  font-size: 23px;
+}
+/*Chatbox stylesheet*/
+.chatbox {
+  height: 620px;
+  width: 350px;
+  min-width: 300px;
+  background: #fff;
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  margin-top: 165px;
+}
+
+.chatbox .message-header {
+  width: 100%;
+  height: 50px;
+  background-color: #f0f8ff;
+  padding:5px;
+}
+
+.chatbox .message-header h4 {
+  margin-top: 10px;
+}
+
+.chat-logs {
+  padding: 10px;
+  width: 100%;
+  height: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* background-color: blue; */
+}
+
+.chat-logs::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-logs::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0,0,0, .1);
+}
+
+.chat {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.chat .chat-message {
+  width: 70%;
+  padding:15px;
+  margin: 5px 10px 0;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.patient .chat-message {
+  background: #ebf0fa;
+}
+
+.doctor .chat-message {
+  background:  #cce6ff;
+  order: -1;
+}
+
+.assistant .chat-message {
+  background: #c6c6ec;
+}
+
+.search-chat-form {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.search-chat-form .input {
+  background: #fbfbfb;
+  width: 90%;
+  height: 100px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  margin-left: 370px
+  /* margin-top: -10px; */
+}
+
+ #send-search {
+float: right;
+}
+
+.chat-form {
+  margin-left: -30px;
+}
+
+.chat-form .input {
+  background: #fbfbfb;
+  width: 100%;
+  height: 75px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  margin-left: 35px
+}
+
+.chat-form textarea:focus {
+  background: #fff;
+}
+
+/* .chat-form .btn {
+  background: #e6f5ff;
+  padding: 5px 15px;
+  font-size: 15px;
+  color: #fff
+  border: none;
+  float: right;
+  border-radius: 5px;
+  box-shadow: 0 3px #0eb2c1;
+  cursor: pointer;
+} */
+
+.chat-form #message-btn {
+    float: right;
+    margin-right: -70px;
+}
+
+/*Search and message*/
+
+.parent-search {
+  width: 500px;
+  height: 150px;
+  position: relative;
+  left: 400px;
+  border-radius: 10px;
+  opacity: 85%;
+}
+
+
+ .boxContainer {
+  margin: 70px  0 470px;
+  position: relative;
+  width: 100%;
+  height: 42px;
+  border: 4px solid #2980b9;
+  padding: 0px 3px;
+  border-radius: 50px;
+  background-color: #F0F8FF;
+  /* background-color: yellow */
+}
+
+
+.elementContainer {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  background-color: #F0F8FF;
+  border-radius: 50px;
+  /* background-color: black; */
+}
+
+.no-record-warning {
+ height: 25px;
+ width: 400px;
+ background-color: orange;
+ position: absolute;
+ bottom: 3px;
+ left: 3px;
+ border-radius: 10px;
+ text-align: center;
+ padding-top: 3px;
+}
+
+.search {
+ height: 100%;
+ width:  100%;
+ padding: 6px 5px 2px 7px;
+ font-size: 15px;
+ font-family: "Nunito";
+ font-weight: 550;
+ float: left;
+ background-color: #F0F8FF;
+ border: none;
+ border-width: 0;
+ box-shadow: none;
+ border-radius: 15px;
+ /* background-color: green; */
+}
+
+/*Stylesheet code for the Private Doctor Portal*/
+.portal-wrapper {
+  width: 150px;
+  height: 100px;
+  background-color: white;
+}
+
+/*Stylesheet code for doctor CRUD table for viewing all patients without tentative diagnoses*/
+.doctor-content-table {
+  border-collapse: collapse;
+  background-color: #cc3300;
+  min-width: 500px;
+  top: 55px;
+  right: 90px;
+  /* left: 15px; */
+  position: absolute;
+}
+
+.doctor-content-table thead tr {
+ background-color: #ccf2ff;
+ color: #ffffff;
+ text-align: left;
+}
+
+.doctor-content-table th,
+.doctor-content-table td {
+  padding: 12px 15px;
+  color: #000000;
+}
+
+.doctor-content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.doctor-content-table tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.doctor-content-table tbody tr:nth-of-type(even) {
+  background-color: #e6ffff;
+}
+
+
+.doctor-content-table thead tr {
+ background-color: #ccf2ff;
+ color: #ffffff;
+ text-align: left;
+}
+
+.doctor-content-table th,
+.doctor-content-table td {
+  padding: 12px 15px;
+  color: #000000;
+}
+
+.doctor-content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.doctor-content-table tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.doctor-content-table tbody tr:nth-of-type(even) {
+  background-color: #e6ffff;
+}
+
+/*Footer*/
+.footer {
+  background: #1a8cff;
+  color: #d3d3d3;
+  height: 350px;
+  position: relative;
+  margin-top: 550px;
+}
+
+.footer .footer-content {
+  height: 350px;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+  color: white;
+}
+
+.footer .footer-content .about h1 span {
+  color: #0066CC;
+  text-shadow: none;
+}
+
+.footer .footer-content .links ul a {
+ display: block;
+ margin-bottom: 10px;
+ font-size: 1.2em;
+ text-decoration: none;
+ color: white;
+ list-style: none;
+}
+
+.footer .footer-content .links ul a:hover {
+    padding-left: 20px;
+    transition: all 0.3s;
+}
+.footer .footer-content .footer-section {
+  flex: 1;
+}
+
+.footer .footer-content .socials i {
+  color: white;
+}
+
+
+.footer .footer-content .contact-form .contact-input {
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding: .9rem 1.4rem;
+  border: none;
+}
+
+.footer .footer-bottom {
+  background: #1a8cff;
+  color: white;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+/*Forms CSS*/
+/*Registration form CSS*/
+.auth-content {
+  width: 30%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.auth-content .form-title {
+  text-align: center;
+}
+
+.auth-content .form-title h2 {
+  color: #80bfff;
+}
+
+.auth-content form div {
+  margin-bottom: 50px;
+}
+
+.auth-content form p {
+  text-align: center;
+}
+
+.auth-content form p a {
+  text-decoration: underline;
+}
+
+
+
+#userModal {
+ /* display: none; */
+ position: fixed;
+ z-index: 1;
+ left: 15%;
+ top: 100px;
+ height: 50%;
+ width: 75%;
+ overflow: auto;
+ background-color: white;
+ border-radius: 20px;
+}
+
+#userModal .modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0,0,0.17);
+  border-radius: 25px;
+}
+
+
+#userModal .modal-content span {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
+
+#userModal .modal-content span:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/*MEDIA QUERY OR MOBILE VIEW CSS*/
+
+@media only screen and (max-width: 934px) {
+  .content {
+    width: 100%;
+  }
+  .content .main-content {
+    width: 100%;
+  }
+  .content .sidebar {
+    width: 100%;
+  }
+
+  .content .sidebar .selection.search{
+    margin-top: 30px;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer .footer-content {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .footer .footer-content .contact-form {
+    padding-bottom: 90px;
+  }
+
+  .footer .footer-content .contact-form .contact-btn {
+    width: 100%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 770px) {
+
+  header {
+    position: relative;
+  }
+
+  header ul {
+    width: 100%;
+  }
+
+  .showing {
+    max-height: 100em;
+  }
+
+  header ul li {
+    width: 100%;
+  }
+
+  header ul li ul {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+   header {
+     position: relative;
+   }
+
+   header ul {
+   width: 100%;
+   background: #80bfff;
+   max-height: 0px;
+   overflow: hidden;
+  }
+
+  .showing {
+    min-height: 30em;
+  }
+
+  header ul li {
+    width: 100%;
+  }
+
+  header ul li ul {
+    /*Added to adjust alignment of words*/
+   margin-right: 320px;
+  }
+
+  header ul li ul li{
+    display: block;
+    position: static;
+    width: 100%;
+    /* margin-right: 40px; */
+  }
+
+
+  header ul li ul li a {
+    padding: 10px;
+    background: #80bfff;
+    color: white;
+    /* padding-left: 30px; */
+    padding-right: 30px;
+    font-size: 15px;
+  }
+
+  header ul li ul li a:hover {
+    background: #F0F8FF;
+  }
+
+   header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.9em;
+  }
+
+  header .logo {
+    margin-left: .5em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .content .main-content .post {
+    height: auto;
+  }
+  .content .main-content .post .post-image {
+    width: 100%;
+  }
+
+  .content .main-content .post .post-preview {
+    width: 100%;
+  }
+
+  .content .main-content .post .post-readmore {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+
+  .post-slider .next {
+    right: 30px;
+  }
+
+  .post-slider .prev {
+    left: 30px;
+  }
+}
+
+
+/*Category content table*/
+.category-content-table {
+  border-collapse: collapse;
+  background-color: #cc3300;
+  min-width: 500px;
+  /* top: 55px;
+  right: 90px; */
+  /* left: 15px; */
+  /* position: absolute; */
+}
+
+.category-content-table thead tr {
+ background-color: #ccf2ff;
+ color: #ffffff;
+ text-align: left;
+}
+
+.category-content-table th,
+.category-content-table td {
+  padding: 12px 15px;
+  color: #000000;
+}
+
+.category-content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.category-content-table tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.category-content-table tbody tr:nth-of-type(even) {
+  background-color: #e6ffff;
+}
+
+
+.category-content-table thead tr {
+ background-color: #ccf2ff;
+ color: #ffffff;
+ text-align: left;
+}
+
+.category-content-table th,
+.category-content-table td {
+  padding: 12px 15px;
+  color: #000000;
+}
+
+.category-content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.category-content-table tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.category-content-table tbody tr:nth-of-type(even) {
+  background-color: #e6ffff;
+}
+
+/*CSS Design of Category content table ends here*/
+
+
+/* * {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 150vh;
+  font-family: Franklin-Gothic;
+  background: url(../img/babywithstethoscope.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background: #0082e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 1px;
+  z-index: 1;
+}
+
+.logo {
+  font-family: "Anton", serif;
+  color: white;
+  font-size: 55px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+/*
+nav ul {
+  margin-right: 20px;
+} */
+
+nav ul li {
+  font-family: Franklin Gothic;
+  display: inline-block;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 20px;
+  position: relative;
+  background-color: #0082e6;
+}
+
+nav ul li ul {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  transition: 0.4s linear;
+  background-color: #0082e6;
+  z-index: 1;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+nav ul li ul li {
+  width: 250px;
+  background-color: #0082e6;
+}
+
+
+/*For dropdown menu*/
+nav > ul > li > ul {
+  top: 100%;
+  left: 0;
+  border-top: 3px solid #fff;
+}
+
+nav ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Stylesheet code for the forms*/
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.wrapper .form {
+  width: 100%;
+}
+
+.wrapper .form .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form .input_field label {
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .input_field {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.wrapper .form .input_field .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .submit_field .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+/*Stylesheet of the forms ends here*/
+
+/*Stylesheet for info wrapper of user portals*/
+.info-wrapper {
+  background: #FFFFF0;
+  max-width:960px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid black;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.info-wrapper-container {
+  float: center;
+  background: #eee;
+  width: 30%;
+  padding: 1%;
+  height: 225px;
+  border-radius: 30px;
+}
+
+/*Stylesheet code ends here*/
+
+/*Find pediatrician portal wrapper*/
+.find-ped-portal-wrapper {
+  background: #F0F8FF;
+  max-width:960px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 25px;
+  opacity: 75%;
+}
+
+.find-ped-portal-infocontainer {
+  float: center;
+  background: #eee;
+  width: 30%;
+  padding: 1%;
+  height: 225px;
+  border-radius: 30px;
+}
+
+
+/*Stylesheet for info wrapper of public access portals*/
+.clinic-portal-wrapper{
+  background: #FFFFF0;
+  max-width:960px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid black;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.clinic-portal-infocontainer {
+  float: center;
+  background: #eee;
+  width: 30%;
+  padding: 1%;
+  height: 225px;
+  border-radius: 30px;
+}
+
+/*Stylesheet code ends here*/
+
+/*Public doctor profile stylesheet code*/
+.public-doc-prof-wrapper {
+  background: #FFFFF0;
+  max-width:960px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid black;
+  margin-top: 25px;
+  overflow: hidden;
+  border-radius: 25px;
+  justify-content: space-between;
+  opacity: 80%;
+}
+
+.contact-info-container {
+  display: inline-block;
+  float: center;
+  background: #eee;
+  width: 225px;
+  padding: 1%;
+  height: 150px;
+  border-radius: 30px;
+  clear: both;
+  margin-left: -290px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+
+.contact-info-container h2 {
+  margin-top: 40px;
+}
+
+.hospitalaff-container {
+  display: inline-block;
+  float: left;
+  background: #eee;
+  width: 225px;
+  padding: 1%;
+  height: 150px;
+  border-radius: 30px;
+  clear: both;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.hospitalaff-container h2 {
+  margin-top: 40px;
+}
+
+.service-info-container {
+  display: inline-block;
+  float: right;
+  background: #eee;
+  width: 235px;
+  padding: 1%;
+  height: 150px;
+  border-radius: 30px;
+  clear: both;
+  margin-right: 50px;
+  margin-top: -175px;
+}
+
+.service-info-container h2 {
+  margin-top: 8px;
+}
+
+
+/*Stylesheet code for medical record creation form from doctor POV*/
+
+.med-record-wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  margin-left: 90px;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.med-record-wrapper .med-record-form {
+  width: 100%;
+}
+
+.med-record-wrapper .med-record-form .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.med-record-wrapper .med-record-form .input_field label {
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.med-record-wrapper .med-record-form .input_field {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.med-record-wrapper .med-record-form .input_field .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.med-record-wrapper .med-record-form .submit_field .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+/*Stylesheet code of create medical record form ends here*/
+
+/*Styleshet code of create medical record form from Doctor Assistant POV*/
+.assist-med-record-wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  margin-left: 30px;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.assist-med-record-wrapper .assist-med-record-form {
+  width: 100%;
+}
+
+.assist-med-record-wrapper .assist-med-record-form .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.assist-med-record-wrapper .assist-med-record-form .input_field label {
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.assist-med-record-wrapper .assist-med-record-form .input_field {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.assist-med-record-wrapper .assist-med-record-form .input_field .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.assist-med-record-wrapper .assist-med-record-form .submit_field .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+/*Stylesheet code of create medical record from doctor assistant ends here*/
+
+/*Stylesheet code of search patient form from doctor POV*/
+.search-wrapper {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0.125);
+  float: right;
+  margin-right: 135px;
+  margin-top: 15px;
+}
+
+.search-wrapper .search-form .input_field {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper .search-form .input_field .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.search-wrapper .search-form .submit_field .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+/*Stylesheet code of search patient form ends here */
+
+/*Stylesheet code of search patient form from doctor assistant POV begins here*/
+.assist-search-wrapper {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0.125);
+  float: right;
+  margin-right: 100px;
+  margin-top: 15px;
+}
+
+.assist-search-wrapper .assist-search-form .input_field {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.assist-search-wrapper .assist-search-form .input_field .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.assist-search-wrapper .assist-search-form .submit_field .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+/*Stylesheet code of search patient form from doctor assistant POV ends here*/
+
+/*Stylesheet code for doctor's patients on visit list*/
+.dr-content-table{
+  position: relative;
+  border-collapse: collapse;
+  margin: 90px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  float: right;
+  margin-right: 10%;
+  margin-left: 5%;
+  background-color: #cc3300;
+  overflow: hidden;
+  clear: both;
+}
+
+.dr-content-table thead tr {
+  background-color: #ccf2ff;
+  color: #ffffff;
+  text-align: left;
+}
+
+.dr-content-table td .view-btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.dr-content-table th,
+.dr-content-table td {
+  padding: 12px 15px;
+  color: #000000;
+}
+
+.dr-content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.dr-content-table tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.dr-content-table tbody tr:nth-of-type(even) {
+  background-color: #e6ffff;
+}
+
+/*Stylesheet code for the doctor's patient list ends here*/
+
+/*Stylesheet code for the table of patient's medical record*/
+
+.assist-content-table{
+  position: relative;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  float: right;
+  margin-right: 8%;
+  margin-left: 5%;
+  background-color: #cc3300;
+  overflow: hidden;
+  clear: both;
+}
+
+.assist-content-table thead tr {
+  background-color: #ccf2ff;
+  color: #ffffff;
+  text-align: left;
+}
+
+.assist-content-table td .view-btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.assist-content-table th,
+.assist-content-table td {
+  padding: 12px 15px;
+  color: #000000;
+}
+
+.assist-content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.assist-content-table tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.assist-content-table tbody tr:nth-of-type(even) {
+  background-color: #e6ffff;
+}
+/*Stylesheet code ends here*/
+
+/*Stylesheet code for doctor assistant form*/
+
+.doctor-assistant-wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  margin-left: 30px;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.doctor-assistant-wrapper .doctor-assistant-form {
+  width: 100%;
+}
+
+.doctor-assistant-wrapper .doctor-assistant-form .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.doctor-assistant-wrapper .doctor-assistant-form .input_field label {
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.doctor-assistant-wrapper .doctor-assistant-form .input_field {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.doctor-assistant-wrapper .doctor-assistant-form .input_field .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.doctor-assistant-wrapper .doctor-assistant-form .submit_field .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+
+/*Stylesheet code for search results for patient records and medical records of patients*/
+.patientinfo-wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin-left: 100px;
+  margin-right: 123px;
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  margin-top: 25px;
+  height: auto;
+}
+
+.patientinfo-wrapper .patientinfo-form .disp-input_field {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.patientinfo-wrapper .patientinfo-form .disp-input_field label {
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/*Stylesheet code forsearch results for patient records and medical records of patients ends here*/
+
+.user-role-list-table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  float: right;
+  margin-right: 35%;
+  margin-left: 10%;
+  margin-bottom: 50%;
+  background-color: #cc3300;
+}
+
+.user-role-list-table thead tr {
+  background-color: #ccf2ff;
+  color: #ffffff;
+  text-align: left;
+}
+
+.user-role-list-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.user-role-list-table tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.user-role-list-table tbody tr:nth-of-type(even) {
+  background-color: #e6ffff;
+}
+
+.user-role-list-table th,
+.user-role-list-table td {
+  padding: 12px 15px;
+  color: #000000;
+}
+
+.user-role-list-table td .action-btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.admin-content-table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  float: right;
+  margin-right: 35%;
+  margin-left: 10%;
+  margin-bottom: 50%;
+  background-color: #cc3300;
+ }
+
+.admin-content-table thead tr {
+    background-color: #ccf2ff;
+    color: #ffffff;
+    text-align: left;
+  }
+
+.admin-content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+.admin-content-table tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+
+.admin-content-table tbody tr:nth-of-type(even) {
+    background-color: #e6ffff;
+  }
+
+.admin-content-table th,
+.admin-content-table td {
+    padding: 12px 15px;
+    color: #000000;
+ }
+
+ .admin-content-table td .admin-view-btn {
+   width: 100%;
+   padding: 8px 10px;
+   font-size: 15px;
+   border: 0;
+   background: #2c3e50;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 3px;
+   outline: none;
+ }
+
+ /*Stylesheet code for Moderator management table*/
+ .moderator-content-table {
+   border-collapse: collapse;
+   margin: 10px 0;
+   font-size: 0.9em;
+   min-width: 400px;
+   float: right;
+   margin-right: 35%;
+   margin-left: 10%;
+   margin-bottom: 50%;
+   background-color: #cc3300;
+  }
+
+ .moderator-content-table thead tr {
+     background-color: #ccf2ff;
+     color: #ffffff;
+     text-align: left;
+   }
+
+ .moderator-content-table tbody tr {
+     border-bottom: 1px solid #dddddd;
+   }
+
+ .moderator-content-table tbody tr:nth-of-type(odd) {
+     background-color: #f2f2f2;
+   }
+
+ .moderator-content-table tbody tr:nth-of-type(even) {
+     background-color: #e6ffff;
+   }
+
+ .moderator-content-table th,
+ .moderator-content-table td {
+     padding: 12px 15px;
+     color: #000000;
+  }
+
+  /* .admin-content-table td .admin-view-btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  } */
+
+
+/*Stylesheet code for notification of new laboratory result uploaded*/
+#upload-count {
+  height: 18px;
+  width: 18px;
+  background-color: #ff0000;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  top: 3px;
+  left: 85px;
+}
+
+/*Stylesheet of modal*/
+#doctorModal {
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+/*Stylesheet for content of about us page*/
+
+.aboutus-wrapper {
+  background: #FFFFF0;
+  max-width:960px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  margin-top: 25px;
+  overflow: hidden;
+  border-radius: 25px;
+  opacity: 70%;
+}
+
+.aboutus-wrapper p {
+  font-family: "Open Family", sans-serif;
+}
+
+.aboutus-container-1 {
+  display: inline-block;
+  float: left;
+  background: #eee;
+  width: 350px;
+  padding: 1%;
+  height: 150px;
+  border-radius: 30px;
+  clear: both;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.aboutus-container-1 h3 {
+  margin-top: 50px;
+}
+
+.aboutus-container-2 {
+  display: inline-block;
+  float: right;
+  background: #eee;
+  width: 350px;
+  padding: 1%;
+  height: 150px;
+  border-radius: 30px;
+  clear: both;
+  margin-left: 50px;
+  margin-top: -150px;
+}
+
+.aboutus-container-2 h3 {
+  margin-top: 50px;
+}
+
+.aboutus-container-3 {
+  display: inline-block;
+  float: left;
+  background: #eee;
+  width: 350px;
+  padding: 1%;
+  height: 150px;
+  border-radius: 30px;
+  clear: both;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.aboutus-container-3 h3 {
+  margin-top: 50px;
+}
+
+.aboutus-container-4 {
+  display: inline-block;
+  float: right;
+  background: #eee;
+  width: 350px;
+  padding: 1%;
+  height: 150px;
+  border-radius: 30px;
+  clear: both;
+  margin-left: 50px;
+  margin-top: -150px;
+}
+
+.aboutus-container-4 h3 {
+  margin-top: 50px;
+}
+
+
+.mod-posts-table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  float: right;
+  margin-right: 35%;
+  margin-left: 10%;
+  margin-bottom: 50%;
+  background-color: #cc3300;
+}
+
+.mod-posts-table thead tr {
+    background-color: #ccf2ff;
+    color: #ffffff;
+    text-align: left;
+}
+
+.mod-posts-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+.mod-posts-table tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+
+.mod-posts-table tbody tr:nth-of-type(even) {
+    background-color: #e6ffff;
+  }
+
+.mod-posts-table th,
+.mod-posts-table td {
+    padding: 12px 15px;
+    color: #000000;
+ }
+
+ .mod-posts-table td .view-btn {
+   width: 100%;
+   padding: 8px 10px;
+   font-size: 15px;
+   border: 0;
+   background: #2c3e50;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 3px;
+   outline: none;
+ }
+
+/*Stylesheet code for contact us form container 1 containing contact details of
+admin*/
+
+.contact-wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  /* margin: 20px auto; */
+  padding: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  margin-right: 35px;
+  margin-top: 45px;
+  margin-left: 37px;
+}
+
+.contact-wrapper .contact-form {
+  width: 100%;
+}
+
+/* .contact-wrapper .contract-form .contact-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  text-align: center;
+} */
+
+
+.contact-wrapper .contact-form .input_field {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.contact-wrapper .contact-form .input_field .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.contact-wrapper .contact-form .submit_field .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0;
+  background: #008ae6;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+
+/*Stylesheet code ends here*/
+
+/*Stylesheet code of contact details*/
+.contact-info {
+  margin-top: 30px;
+  margin-left: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info h3 {
+  font-size: 36px;
+  font-weight: 500px;
+  margin-left: 20px;
+}
+
+.contact-info .box {
+  padding: 20px 0;
+  display: flex;
+  /* border-radius: center; */
+}
+
+.contact-info .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.contact-info .box .text {
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.contact-info .box .text p {
+  color: #000000;
+  font-size: 15px;
+}
+/*Stylesheet code for contact us page ends here*/
+
+/*Stylesheet code for messaging*/
+/* .container {
+  width: 450px !important; */
+  /* margin: auto; */
+  /* margin-top: -42%;
+  margin-left: 500px;
+  margin-right: -500px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  float: right !important; */
+  /* background-color: green; */
+/* } */
+
+
+/* .msg-header {
+  border: 1px solid #ccc;
+  /* width: 100%; */
+  /* width: 500px;
+  /* min-width: 390px; */
+  /* height: 15%;
+  border-bottom: none;
+  background-color: #F0F8FF;
+  margin-left: 741px !important;
+  margin-top: -160px; */
+/* }  */
+
+/* .msg-header h4 {
+  margin-top: 5px;
+} */
+
+/* .msg-header p {
+  padding: 7px;
+}
+ */
+
+
+
+
+.chatbox {
+  /* width: 500px;
+  min-width: 390px; */
+  height: 610px;
+  width: 340px;
+  min-width: 200px;
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  /* position: fixed;
+  top: 350px;
+  right: 150px; */
+  /* height: 620px;
+  background: #fff;
+  box-shadow: 0 3px #ccc;
+  float: right;
+  margin-top: -200px;
+  margin-right: -300px;
+  /* margin-right: 90px; */
+  /* opacity: 85%;
+  position: relative !important; */ */
+  /* position-sticly */
+  /* clear: both; */
+}
+
+.chatbox .msg-header {
+  width: 100%;
+  height: 50px;
+  background-color: #F0F8FF;
+  padding:5px;
+}
+
+.chatbox .msg-header h4 {
+  font-size: 23px;
+}
+
+.chatbox .msg-header p {
+  padding: 0 0 20px 0;
+  font-size: 18px;
+}
+
+.chat-logs {
+  padding: 10px;
+  width: 100%;
+  height: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.chat-logs::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-logs::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0,0,0, .1);
+}
+
+.chat {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.chat .chat-message {
+  width: 70%;
+  padding:15px;
+  margin: 5px 10px 0;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.patient .chat-message {
+  background: #ccebff;
+}
+
+.doctor .chat-message {
+  background: #f2f2f2;
+  order: -1;
+}
+
+.assistant .chat-message {
+  background: #c6c6ec;
+}
+
+.chat-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat-form .input {
+  background: #fbfbfb;
+  width: 120%;
+  height: 50px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  margin-left: 35px
+}
+
+.chat-form textarea:focus {
+  background: #fff;
+}
+
+.chat-form .btn {
+  background:  #80bfff;
+  padding: 5px 15px;
+  font-size: 15px;
+  color: #fff
+  border: none;
+  float: right;
+  border-radius: 5px;
+  box-shadow: 0 3px #0eb2c1;
+  cursor: pointer;
+}
+
+.chat-form-2 {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat-form-2 .input-2 {
+  background: #fbfbfb;
+  width: 90%;
+  height: 50px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  margin-left: 35px
+}
+
+.chat-form-2 textarea:focus {
+  background: #fff;
+}
+
+.chat-form-2 .btn-2 {
+  background: #e6f5ff;
+  padding: 5px 15px;
+  font-size: 15px;
+  color: #fff
+  border: none;
+  float: right;
+  border-radius: 5px;
+  box-shadow: 0 3px #0eb2c1;
+  cursor: pointer;
+}
+
+
+/*Stylesheet code for messaging ends here*/
+
+.parent {
+  position: relative;
+  height: 620px;
+  width: 1100px;
+  right: 300px;
+  top: -200px;
+  /* clear: both; */
+  /* overflow: hidden; */
+}
+
+.main-container {
+  height: 600px;
+  width: 500px;
+  min-width: 300px;
+  background: #fff;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+
+.list-header {
+  width: 100%;
+  height: 50px;
+  background-color: #F0F8FF;
+}
+
+.list-header h4 {
+  padding: 10px 0 10px 0;
+  font-size: 23px;
+}
+
+.users-list {
+  width: 100%;
+  height: 265px;
+  margin: 10px 0 10px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.users-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.users-list::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0,0,0, .5);
+}
+
+.users-list .users {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.users-list .users p {
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+.users-list .user-list-title {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+.users-list .user-list-title h4 {
+ font-size: 20px;
+ text-align: center;
+ padding-top: 10px;
+}
+
+/*Search bar for Messaging module*/
+
+.parent-search {
+  width: 500px;
+  height: 150px;
+  position: relative;
+  left: 460px;
+  border-radius: 10px;
+  opacity: 85%;
+}
+
+ .boxContainer {
+  margin: 70px  0 470px;
+  position: relative;
+  width: 100%;
+  height: 42px;
+  border: 4px solid #2980b9;
+  padding: 0px 3px;
+  border-radius: 50px;
+  background-color: #F0F8FF;
+  /* background-color: yellow */
+}
+
+
+.elementContainer {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  background-color: #F0F8FF;
+  border-radius: 50px;
+  /* background-color: black; */
+}
+
+ .search {
+  height: 100%;
+  width:  100%;
+  padding: 6px 5px 2px 7px;
+  font-size: 15px;
+  font-family: "Nunito";
+  font-weight: 550;
+  float: left;
+  background-color: #F0F8FF;
+  border: none;
+  border-width: 0;
+  box-shadow: none;
+  border-radius: 15px;
+  /* background-color: green; */
+}
+
+.message-div {
+  margin-top: -470px !important;
+  width: 500px;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 75%;
+  position: relative;
+}
+
+.message-div .input {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  background-color:  #F0F8FF;
+  opacity: 85%;
+  position: absolute;
+  left: -33px;
+  opacity: 90%;
+}
+
+
+
+.send-div .btn {
+  margin-top: 6px !important;
+  opacity: 85%;
+  width: 55px;
+  margin-right: 5px;
+  text-align: center;
+  padding-left: 8px;
+}
+
+
+
+
+
+.no-record-warning {
+ height: 25px;
+ width: 400px;
+ background-color: orange;
+ position: absolute;
+ bottom: 3px;
+ left: 3px;
+ border-radius: 10px;
+ text-align: center;
+ padding-top: 3px;
+}
+
+.no-record-warning p {
+  color: red;
+  font-weight: bolder;
+  background-color: #F0F8FF;
+  border-radius: 10px;
+}
+
+.search:focus {
+ outline: none;
+}
+
+ .elementContainer .btn {
+   padding: 8px 10px;
+   font-size: 15px;
+   border: 0;
+   background: #e6e6e6;
+   color:  #000000;
+   cursor: pointer;
+   border-radius: 5px;
+   outline: none;
+}
+
+
+.fa fa-search {
+  font-size: 25px;
+  color: #fff;
+  font color: white;
+}
+
+/*Stylesheet code ends here*/
+
+.govt-links-div {
+  width: 100%;
+  height: 60%;
+  display: inline-block;
+  justify-content: space-between;
+  /* margin-right: 25px; */
+  position: relative;
+  left: -100px;
+}
+
+.govt-links-div #DOH-Link {
+ width: 20%;
+ float: left;
+ margin-top: 100px;
+ margin-left: 15%;
+}
+
+.govt-links-div #PhilHealth {
+  float: left;
+  margin-top: 150px;
+  margin-left: 15px;
+}
+
+.govt-links-div #PhilHealth img{
+  border-radius: 60px;
+
+}
+
+.govt-links-div #FDA {
+  float: left;
+  margin-top: 120px;
+}
+
+.govt-links-div #NPC {
+  margin-top: 80px;
+
+}
+
+.govt-links-div #NPC img {
+  border-radius: 50px
+}
+
+
+#website-title-1 {
+  float: left;
+  margin-left: 35%;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+#website-title-2 {
+  font-size: 35px;
+  font-weight: bolder
+}
+
+#website-title-3 {
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+#website-title-4 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+
+.about-us-message h2{
+  max-width: 500px;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid ##F0FFFF;
+  padding: 10px;
+  opacity: 70%;
+} */

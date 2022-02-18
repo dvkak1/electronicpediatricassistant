@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0;
+  background: #e6e6e6;
+}
+
+header * {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+header {
+  background: #99ccff;
+  height: 66px;
+}
+
+header .logo {
+  float: left;
+  /* border: 1px solid red; */
+  height: inherit;
+  margin-left: 2em;
+  margin-top: 3px;
+}
+
+header .logo-text {
+  margin: 9px;
+  font-family: Goldman;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+header .logo-text span {
+  color: #000000;
+  text-shadow: none;
+}
+
+header ul {
+  float: right;
+  /* border: 1px solid red; */
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  height: inherit;
+}
+
+.admin-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* .admin-wrapper  */
+
+.admin-wrapper .left-sidebar {
+  flex: 2;
+  height: 100%;
+  background: #99ccff;
+
+
+}
+
+.admin-wrapper .left-sidebar ul {
+  list-style:none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.admin-wrapper .left-sidebar ul li a {
+  padding: 18px;
+  display: block;
+  border-bottom: 1px solid #004044;
+  text-decoration: none;
+  color: white;
+}
+
+.admin-wrapper .admin-content {
+  flex: 8;
+  height: 100%;
+  padding: 40px 100px 100px;
+  overflow-y: scroll;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.activate {
+  color: green;
+  text-decoration: none;
+}
+
+.deactivate {
+  color: red;
+  text-decoration: none;
+}
+
+.reactivate {
+  color: lightblue;
+  text-decoration: none;
+
+}
+
+
+.btn {
+  padding: .5rem 1rem;
+  background: #80bfff;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: white !important;
+  background:#0066CC;
+}
+
+.activate-btn {
+  padding: .5rem 1rem;
+  background: #99ccff;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  text-decoration: none;
+}
+
+.activate-btn:hover {
+  color: white !important;
+  background:#006600;
+}
+
+
+.deactivate-btn {
+  padding: .5rem 1rem;
+  background: #ff0000;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  text-decoration: none;
+}
+
+.deactivate-btn:hover {
+  color: white !important;
+  background:#800000;
+}
+
+.reactivate-btn {
+  padding: .5rem 1rem;
+  background: #66ccff;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  text-decoration: none;
+}
+
+.reactivate-btn:hover {
+  color: white !important;
+  background: #0066ff;
+}
+
+#userModal {
+ /* display: none; */
+ position: fixed;
+ z-index: 1;
+ left: 15%;
+ top: 100px;
+ height: 50%;
+ width: 75%;
+ overflow: auto;
+ background-color: white;
+ border-radius: 20px;
+}
+
+#userModal .modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0,0,0.17);
+  border-radius: 25px;
+}
+
+
+#userModal .modal-content span {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
+
+#userModal .modal-content span:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#notifLab {
+  height: 18px;
+  width: 18px;
+  background-color: #ff0000;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+  /* bottom:-15px; */
+  left: 100px;
+}
+
+/*Moderator CRUD style*/
+
+.admin-addmoderator-content {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#post-form {
+  margin-right: 100px;
+}
+
+.admin-addmoderator-content .form-title {
+  text-align: center;
+}
+
+ .admin-addmoderator-content .form-title h2 {
+  color: #80bfff;
+}
+
+.admin-addmoderator-content form div {
+  margin-bottom: 50px;
+}
+
+ .admin-addmoderator-content form p {
+  text-align: center;
+}
+
+ .admin-addmoderator-content form p a {
+  text-decoration: underline;
+}
+
+ .admin-addmoderator-content .text-input {
+  padding: .7rem 1rem;
+  display: block;
+  width: 95%;
+  border-radius: 5px;
+  outline: none;
+  color: #444;
+  line-height: 1.5rem;
+}
