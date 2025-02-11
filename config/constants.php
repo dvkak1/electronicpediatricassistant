@@ -6,7 +6,7 @@ if (!defined('EMAIL') && !defined('PASSWORD') && !defined('DB_HOST')
 
 
   define('EMAIL', 'dalevincent.kakilala@gmail.com');
-  define('PASSWORD', 'Ryu3nj1n<>?');
+  define('PASSWORD', 'Ryu3nj1nz1lla<>?');
 
   //
   define('DB_HOST', 'localhost');
